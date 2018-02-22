@@ -1,5 +1,7 @@
 import paho.mqtt.client as mqtt
 
+DB = 'danielnodedb'
+
 def on_connect( client, userdata, flags, rc ):
 #""" callback function for client connection """
     client.subscribe( "Danielnode/#")
