@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Generations</title>
+</head>
+
+<body>
+	{% if gen not in generations %}
+		<b>There are no generation {{gen}} pokemon</b>
+	{% else %}
+		<b>The generation {{gen}} pokemon are</b>
+
+		<table title="Pokemon">
+			{% for name in names %}
+				<tr>
+					{% for n in name %}
+						<td>{{n}}</td>
+					{% endfor %}
+				</tr>
+			{% endfor %}
+		</table>
+	{% endif %}
+	
+	<br/>
+
+	<div>Generations: 
+		{% for g in generations %}
+			<a href="generation?gen={{g}}">{{g}}</a>
+		{% endfor %}
+	</div>
+
+	<a href="index">Home</a>
+</body>
+</html>
