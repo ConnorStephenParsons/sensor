@@ -1,0 +1,32 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS `sensordata` (
+	`name`	TEXT NOT NULL,
+	`value`	REAL NOT NULL,
+	`datetime`	INTEGER NOT NULL
+);
+INSERT INTO `sensordata` VALUES ('light',250.0,'2018-02-26 12:01:46.607490');
+INSERT INTO `sensordata` VALUES ('gravity',0.469,'2018-02-26 12:01:55.374912');
+INSERT INTO `sensordata` VALUES ('LinearAcceleration',0.442,'2018-02-26 12:01:55.512809');
+INSERT INTO `sensordata` VALUES ('Accelerometer',0.122,'2018-02-26 12:02:22.146073');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:01:46.607490');
+INSERT INTO `sensordata` VALUES ('temp',0.06,'2018-02-26 12:01:55.374912');
+INSERT INTO `sensordata` VALUES ('humidity',79.0,'2018-02-26 12:01:55.512809');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:02:22.146073');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:02:27.599304');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:02:33.055949');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:02:38.580272');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:02:44.035231');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:02:49.577877');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:02:55.026526');
+INSERT INTO `sensordata` VALUES ('temp',0.06,'2018-02-26 12:02:55.448720');
+INSERT INTO `sensordata` VALUES ('humidity',79.0,'2018-02-26 12:02:55.589428');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:03:00.488178');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:03:05.943134');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:03:11.387481');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:03:16.835683');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:03:22.289109');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:03:27.739997');
+INSERT INTO `sensordata` VALUES ('temp',0.07,'2018-02-26 12:03:33.191647');
+INSERT INTO `sensordata` VALUES ('temp',0.06,'2018-02-26 12:03:55.581704');
+INSERT INTO `sensordata` VALUES ('humidity',79.0,'2018-02-26 12:03:55.726798');
+COMMIT;
